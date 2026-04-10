@@ -151,7 +151,7 @@ def delete_user_handler(
     # cf) session.expunge(user) -> 세션의 추적 대상에서 제거
     session.commit()
 
-    # 방법 2) delete
+    # 방법 2) 곧바로 삭제
     # stmt = delete(User).where(User.id == user_id)
     # session.execute(stmt)
     # session.commit()
